@@ -9,7 +9,12 @@ app.use(cors())
 
 const users = require('./routes/api/users')
 
+const sendGrid = require('./routes/api/SendGrid')
+
+
 app.use('/api/users', users)
+
+app.use('/api/SendGrid', sendGrid)
 
 const port = process.env.PORT || 5000
 
