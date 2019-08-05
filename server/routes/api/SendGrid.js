@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.post('/', async(req, res) => {
     const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey('SG.privkey');
+    sgMail.setApiKey('SG.priv');
 
     const msg = {
         to: req.body.email,
